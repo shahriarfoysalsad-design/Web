@@ -1,76 +1,274 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport"
-    content="width=device-width,
-    initial-scale=1">
-</head>
-<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shahriar Foysal Sad - Data</title>
+
     <style>
-        div{
-            background:red;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #07111f, #102a43);
             color: white;
-            border: 3px soild blue;
-            padding: 22 pixels;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .welcome {
+            animation: fadeIn 1.5s ease;
+        }
+
+        .welcome h1 {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .welcome p {
+            color: #9fdcff;
+            font-size: 18px;
+        }
+
+        .arrow {
+            margin-top: 50px;
+            font-size: 35px;
+            animation: arrowMove 1.5s infinite;
+        }
+
+        /* Data Section */
+        .data-section {
+            max-width: 700px;
+            margin: auto;
+            padding: 30px 20px 100px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 50px;
+            color: #5ecbff;
+        }
+
+        /* Data Card */
+        .data-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+
+            opacity: 0;
+            transform: translateY(80px);
+            transition: all 0.9s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .data-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .icon {
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #0ea5e9;
+            border-radius: 50%;
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .label {
+            color: #8eb8d6;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
+        .value {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #7fa8c2;
+            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes arrowMove {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(15px);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            .welcome h1 {
+                font-size: 29px;
+            }
+
+            .welcome p {
+                font-size: 16px;
+            }
+
+            .data-section {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .title {
+                font-size: 27px;
+            }
+
+            .data-card {
+                padding: 22px;
+            }
+
+            .value {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
-<body> 
-    <div>
-        
-            <b>
-        <h3>খেলা</h3>
-        </b>
-        
-    </div>
-</body>
-<title>খেলা</title>
-    <br>
-    
-    <center>
-        <a href="https://shahriarfoysalsad-design.github.io/Time-Bangla/" style="text-decoration: none;">Home</a>
-        <br>
-        <br>
-        <br>
-        <b>FIFA world cup 2026</b>
-        <br>
-        <br>
-        <br>
-        <b>Spain Win 2026 world cup</b>
-<br>
-<br>
-<img src="aa36acf3-83a7-413d-a21a-7c40b04c35ac.jpg" alt="Time Bangla Logo" width="363">
+
+<body>
+
+    <!-- Welcome -->
+    <header>
+        <div class="welcome">
+            <h1>Shahriar Foysal Sad</h1>
+            <p>Welcome to my profile</p>
+
+            <div class="arrow">
+                ↓
+            </div>
+        </div>
+    </header>
 
 
+    <!-- Data -->
+    <section class="data-section">
 
-        <b>ফিফা বিশ্বকাপ ২০২৬ এ কোয়ার্টার ফাইনালে যেসব দল</b>
-<br>
-<br>
+        <h2 class="title">Personal Information</h2>
 
-<img src="17912a05-e362-4712-807e-8cdc24a0d7b7.jpg
-" alt="Time Bangla Logo" width="363">
+        <!-- Name -->
+        <div class="data-card">
+            <div class="icon">👤</div>
 
-
-<br>
-<br>
-
-
-<img src="975298c4-0940-492a-9772-a3e4e6f8b23d.jpg" alt="Time Bangla Logo" width="363">
+            <div class="label">NAME</div>
+            <div class="value">Shahriar Foysal Sad</div>
+        </div>
 
 
-        
+        <!-- Date of Birth -->
+        <div class="data-card">
+            <div class="icon">🎂</div>
+
+            <div class="label">DATE OF BIRTH</div>
+            <div class="value">04/01/2009</div>
+        </div>
 
 
+        <!-- Address -->
+        <div class="data-card">
+            <div class="icon">📍</div>
+
+            <div class="label">ADDRESS</div>
+            <div class="value">Kusumba, Manda, Naogaon</div>
+        </div>
 
 
+        <!-- Work -->
+        <div class="data-card">
+            <div class="icon">🎓</div>
+
+            <div class="label">WORKS AT</div>
+            <div class="value">Student</div>
+        </div>
 
 
-        
+        <!-- Web Design -->
+        <div class="data-card">
+            <div class="icon">💻</div>
 
-    </center>
+            <div class="label">SKILL / WORK</div>
+            <div class="value">Web Design</div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        © 2026 Shahriar Foysal Sad
+    </footer>
+
+
+    <script>
+
+        // Scroll করলে card ধীরে ধীরে উপরে উঠবে
+        const cards = document.querySelectorAll(".data-card");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.15
+            }
+        );
+
+
+        cards.forEach((card) => {
+            observer.observe(card);
+        });
+
+    </script>
+
 </body>
 </html>
-
-
-    
-    
